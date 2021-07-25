@@ -1,0 +1,64 @@
+.calculator-emp {
+  width: 280px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  border-radius: 6px;
+  &-grid {
+    background: var(--secondary-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+    height: 250px;
+    /* grid-template-columns: 100px 50px 100px; */
+    /* grid-template-rows: 80px auto 80px; */
+    column-gap: 10px;
+    row-gap: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    border-radius: 6px;
+    &--item {
+      background-color: var(--btn-backg-color);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+      font-weight: bold;
+      border-radius: 6px;
+      box-shadow: 0px 2px 0px var(--shadow-btn-backg-color);
+      cursor: pointer;
+      color: var(--btn-color);
+      &:last-child {
+        grid-column: 3 / span 2;
+        grid-row: 5;
+        background: var(--result-btn-color);
+        color: white;
+        box-shadow: 0px 2px 0px var(--shadow-result-btn-color);
+      }
+      &.item16 {
+        grid-column: 1 / span 2;
+        grid-row: 5;
+        background: var(--delete-btn-color);
+        color: white;
+        box-shadow: 0px 2px 0px var(--shadow-delete-btn-color);
+      }
+      &.delete-item {
+        background: var(--delete-btn-color);
+        color: white;
+        box-shadow: 0px 2px 0px var(--shadow-delete-btn-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.swtich-theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 30px;
+  position: absolute;
+  top: 0;
+  &-title {
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--title-color);
+  }
+  &-emp {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &__radio-group {
+      border-radius: 10px;
+    }
+    &__radio-btn {
+      border: 1px solid var(--secondary-color) !important;
+      border-left: 1px solid var(--secondary-color) !important;
+      background: var(--secondary-color) !important;
+      border-color: var(--secondary-color) !important;
+      &:first-child {
+        border-left: 1px solid var(--secondary-color) !important;
+        border-radius: 50px 0 0 50px !important;
+        background: var(--secondary-color) !important;
+      }
+      &:last-child {
+        border-radius: 0 50px 50px 0 !important;
+      }
+      &:before {
+        background-color: var(--secondary-color) !important;
+      }
+      &:focus,
+      &:focus-within,
+      &:checked,
+      &:active,
+      &:hover {
+        background-color: var(--secondary-color) !important;
+        box-shadow: none !important;
+      }
+    }
+    &__switcher {
+      border-radius: 50px;
+      background: var(--result-btn-color);
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      z-index: 2;
+      left: 4px;
+      transition: left 0.4s ease-in-out;
+    }
+  }
+}

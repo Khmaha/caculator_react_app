@@ -1,0 +1,19 @@
+.result-card {
+  /* padding: 1em; */
+  background: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: 40px;
+  right: 0;
+  object-fit: cover;
+  height: 50px;
+  border-radius: 6px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 2em;
+  overflow: hidden;
+}
